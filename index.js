@@ -5,6 +5,8 @@ const axios = require('axios');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+app.enable("trust proxy");
+app.set("json spaces", 2);
 
 // Middleware untuk CORS
 app.use(cors());
