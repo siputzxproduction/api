@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>API Documentation</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    color: #007bff;
+    text-align: center;
+  }
+  h2 {
+    color: #343a40;
+    margin-top: 20px;
+  }
+  p {
+    line-height: 1.6;
+    color: #6c757d;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  pre {
+    background-color: #f0f6ff;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  .btn-container {
+    margin-top: 20px;
+  }
+  .btn {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>API Documentation</h1>
+  <p>Welcome to the API documentation for our service. Below you will find information about the available endpoints and how to use them. I want to tell you something that this rest api was made from start to finish by GPT chat and I think that is very cool</p>
+  
+  <h2>Endpoints</h2>
+  <div class="btn-container">
+    <a href="/api/ragbot?message=hai" class="btn">Try /api/ragbot</a>
+    <a href="/api/degreeguru?message=hai" class="btn">Try /api/degreeguru</a>
+    <a href="/api/pinecone?message=hai" class="btn">Try /api/pinecone</a>
+    <a href="/api/smartcontract?message=hai" class="btn">Try /api/smartcontract</a>
+    <a href="/api/blackboxAIChat?message=hai" class="btn">Try /api/blackboxAIChat</a>
+  </div>
+  
+  <h2>Usage</h2>
+  <p>To use the endpoints, send a GET request to the desired endpoint with the following query parameter:</p>
+  <ul>
+    <li>message: Your message content</li>
+  </ul>
+  
+  <h2>Response</h2>
+  <p>The response will be in JSON format with the following structure:</p>
+  <pre>
+  {
+    "status": 200,
+    "creator": "ChatGPT",
+    "data": {
+      "response": "Response data here"
+    }
+  }
+  </pre>
+</div>
+</body>
+</html>
